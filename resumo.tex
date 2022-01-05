@@ -1,0 +1,126 @@
+\documentclass{pssbmac}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% POR FAVOR, NÃO FAÇA MUDANÇAS NESSE PADRÃO QUE ACARRETEM  EM
+%% ALTERAÇÃO NA FORMATAÇÃO FINAL DO TEXTO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% POR FAVOR, ESCOLHA CONFORME O CASO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[brazil]{babel} % texto em Português
+%\usepackage[english]{babel} % texto em Inglês
+
+%\usepackage[latin1]{inputenc} % acentuação em Português ISO-8859-1
+\usepackage[utf8]{inputenc} % acentuação em Português UTF-8
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% POR FAVOR, NÃO ALTERAR
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{indentfirst}
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+\usepackage{url}
+\usepackage{csquotes}
+% Ambientes pré-definidos
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{remark}{Remark}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{teorema}{Teorema}[section]
+\newtheorem{lema}{Lema}[section]
+\newtheorem{prop}{Proposi\c{c}\~ao}[section]
+\newtheorem{defi}{Defini\c{c}\~ao}[section]
+\newtheorem{obs}{Observa\c{c}\~ao}[section]
+\newtheorem{cor}{Corol\'ario}[section]
+
+% ref bibliográficas
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{refs.bib}
+\DeclareTextFontCommand{\emph}{\boldmath\bfseries}
+\DefineBibliographyStrings{brazil}{phdthesis = {Tese de doutorado}}
+\DefineBibliographyStrings{brazil}{mathesis = {Disserta\c{c}\~{a}o de mestrado}}
+\DefineBibliographyStrings{english}{mathesis = {Master dissertation}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TÍTULO E AUTORAS(ES)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Instruções para Submissão de Resumos para o CNMAC}
+
+\author{
+    {\large Sandra M. C. Malta}\thanks{autora1@email}, {\large Patricia R. Fortes}\thanks{autora2@email}\\
+    {\small LNCC, Petrópolis, RJ} \\
+    {\large Mateus Bernardes}\thanks{autor3@email}  \\
+    {\small DAMAT/UTFPR, Curitiba, PR} \\
+}
+\criartitulo
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TEXTO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Este é o padrão (formato \LaTeX{} apenas) para a submissão de trabalhos da Categoria 1 do CNMAC, destinados à divulgação de pesquisas em andamento, com resultados preliminares, e pesquisas em nível de Iniciação Científica. \emph{Nesta categoria, os trabalhos devem ser submetidos em Português ou Inglês, em forma de resumo de, no máximo, duas páginas, incluindo-se as referências bibliográficas.} Os \emph{trabalhos submetidos} que \emph{não estiverem de acordo com o formato} apresentado por esse padrão \emph{serão rejeitados} pelo Comitê Editorial do evento, sem análise do mérito científico.
+
+Equações inseridas no resumo devem ser enumeradas sequencialmente e à direita no texto, por exemplo
+\begin{equation}
+\frac{\partial u}{\partial t}-\Delta u = f, \quad  \mathrm{em} \; \Omega. \label{Calor}
+\end{equation}
+Consulte o arquivo \verb!.tex! para mais detalhes sobre o código-fonte gerador da equação \eqref{Calor}.
+
+Tendo em vista tratar-se de um resumo, sugere-se evitar a inserção de seções, tabelas e figuras. Caso necessária, a inserção de tabela deve ser feita com o ambiente \verb!table!, sendo enumerada, disposta horizontalmente centralizada, próxima de sua referência no texto, e a legenda imediatamente acima dela. Por exemplo, consulte a Tabela \ref{tabela01}.
+
+\begin{table}[H]
+\caption{ {\small Categorias dos trabalhos.}}
+\centering
+\begin{tabular}{ccc}
+\hline
+Categoria do trabalho  & Número de páginas & Tipo do trabalho\\ \hline
+1          & 2  & $A$, $B$ e $C$    \\
+2          & entre 5 e 7  & apenas $C$ \\
+\hline
+\end{tabular}\label{tabela01}
+\end{table}
+
+A inserção de figura deve ser feita com o ambiente \verb!figure!, ela deve estar enumerada, disposta horizontalmente centralizada, próxima de sua referência no texto, e legenda imediatamente abaixo dela. \emph{Quando não própria, deve-se indicar/referências a fonte.} Por exemplo, consulte a Figura \ref{figura01}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.475\textwidth]{ex_fig}
+\caption{ {\small Exemplo de imagem. Fonte: indicar.}}
+\label{figura01}
+\end{figure}
+
+As referências bibliográficas devem ser inseridas conforme especificado neste padrão, sendo que serão automaticamente geradas em ordem de citação no texto. Este {\it template} fornece suporte para a inserção de referências bibliográficas com o Bib\LaTeX{}. Os dados de cada referência do trabalho devem ser adicionados no arquivo \verb+refs.bib+ e a indicação da referência no texto deve ser inserida com o comando \verb+\cite+. Seguem alguns exemplos de referências: livro \cite{Boldrini}, artigos publicados em periódicos \cite{Contiero,Cuminato}, capítulo de livro \cite{daSilva}, dissertação de mestrado \cite{Diniz}, tese de doutorado \cite{Mallet}, livro publicado dentro de uma série \cite{Gomes}, trabalho publicado em anais de eventos \cite{Santos}, {\it website} e outros \cite{CNMAC}. Sempre que disponível forneça o DOI, ISBN ou ISSN, conforme o caso.
+
+\section*{Agradecimentos (opcional)}
+
+Seção reservada aos agradecimentos dos autores, caso for pertinente. Por exemplo, agradecimento a fomentos.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% REFS BIBLIOGRÁFICAS
+% POR FAVOR, NÃO ALTERAR
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\printbibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
+
+
+
