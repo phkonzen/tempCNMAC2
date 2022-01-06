@@ -58,7 +58,7 @@
 % TÍTULO E AUTORAS(ES)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title{Instruções para Submissão de Resumos para o CNMAC}
+\title{Instruções para Submissão de Trabalhos Completos para o CNMAC}
 
 \author{
     {\large Sandra M. C. Malta}\thanks{autora1@email}, {\large Patricia R. Fortes}\thanks{autora2@email}\\
@@ -74,7 +74,18 @@
 % TEXTO
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Este é o padrão (formato \LaTeX{} apenas) para a submissão de trabalhos da Categoria 1 do CNMAC, destinados à divulgação de pesquisas em andamento, com resultados preliminares, e pesquisas em nível de Iniciação Científica. \emph{Nesta categoria, os trabalhos devem ser submetidos em Português ou Inglês, em forma de resumo de, no máximo, duas páginas, incluindo-se as referências bibliográficas.} Os \emph{trabalhos submetidos} que \emph{não estiverem de acordo com o formato} apresentado por esse padrão \emph{serão rejeitados} pelo Comitê Editorial do evento, sem análise do mérito científico.
+\begin{abstract}
+{\bf Resumo}. Este é o padrão (formato \LaTeX{} apenas) para a submissão de trabalhos da Categoria 2 do CNMAC, destinados à divulgação de pesquisas em andamento, com resultados conclusivos. \emph{Nesta categoria, os trabalhos devem ser submetidos em Português ou Inglês, em forma de artigo com no mínimo 5 e no máximo 7 páginas, incluindo-se as referências bibliográficas.} Os \emph{trabalhos submetidos} que \emph{não estiverem de acordo com o formato} apresentado por esse padrão \emph{serão rejeitados} pelo Comitê Editorial do evento, sem análise do mérito científico.  
+
+\noindent
+{\bf Palavras-chave}. Instruções, \LaTeX, Trabalhos Completos, SBMAC, CNMAC  (entre 3-6 palavras-chave)
+\end{abstract}
+
+\section{Introdução}
+
+Este documento apresenta o padrão (formato \LaTeX{} apenas) para a submissão de trabalhos da Categoria 2 do CNMAC, destinados à divulgação de pesquisas com resultados conclusivos. \emph{Nesta categoria, os trabalhos devem ser submetidos em Português ou Inglês, em forma de artigo com no mínimo 5 e no máximo 7 páginas, incluindo-se as referências bibliográficas, figuras e tabelas.} Os \emph{trabalhos submetidos} que \emph{não estiverem de acordo com o formato} apresentado por esse padrão \emph{serão rejeitados} pelo Comitê Editorial do evento, sem análise do mérito científico.
+
+\section{Equações}
 
 Equações inseridas no resumo devem ser enumeradas sequencialmente e à direita no texto, por exemplo
 \begin{equation}
@@ -82,7 +93,13 @@ Equações inseridas no resumo devem ser enumeradas sequencialmente e à direita
 \end{equation}
 Consulte o arquivo \verb!.tex! para mais detalhes sobre o código-fonte gerador da equação \eqref{Calor}.
 
-Tendo em vista tratar-se de um resumo, sugere-se evitar a inserção de seções, tabelas e figuras. Caso necessária, a inserção de tabela deve ser feita com o ambiente \verb!table!, sendo enumerada, disposta horizontalmente centralizada, próxima de sua referência no texto, e a legenda imediatamente acima dela. Por exemplo, consulte a Tabela \ref{tabela01}.
+\section{Tabelas e Figuras}
+
+As(os) autoras(es) podem inserir figuras e tabelas no artigo. Elas devem estar dispostas próximas de suas referências no texto.
+
+\subsection{Inserção de Tabelas}
+
+A inserção de tabela deve ser feita com o ambiente \verb!table!, sendo enumerada, disposta horizontalmente centralizada, próxima de sua referência no texto, e a legenda imediatamente acima dela. Por exemplo, consulte a Tabela \ref{tabela01}.
 
 \begin{table}[H]
 \caption{ {\small Categorias dos trabalhos.}}
@@ -96,20 +113,28 @@ Categoria do trabalho  & Número de páginas & Tipo do trabalho\\ \hline
 \end{tabular}\label{tabela01}
 \end{table}
 
+\subsection{Inserção de Figuras}
+
 A inserção de figura deve ser feita com o ambiente \verb!figure!, ela deve estar enumerada, disposta horizontalmente centralizada, próxima de sua referência no texto, e legenda imediatamente abaixo dela. \emph{Quando não própria, deve-se indicar/referências a fonte.} Por exemplo, consulte a Figura \ref{figura01}.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=.475\textwidth]{ex_fig}
+\includegraphics[width=.7\textwidth]{ex_fig}
 \caption{ {\small Exemplo de imagem. Fonte: indicar.}}
 \label{figura01}
 \end{figure}
 
+\section{Sobre as Referências Bibliográficas}
+
 As referências bibliográficas devem ser inseridas conforme especificado neste padrão, sendo que serão automaticamente geradas em ordem de citação no texto. Este {\it template} fornece suporte para a inserção de referências bibliográficas com o Bib\LaTeX{}. Os dados de cada referência do trabalho devem ser adicionados no arquivo \verb+refs.bib+ e a indicação da referência no texto deve ser inserida com o comando \verb+\cite+. Seguem alguns exemplos de referências: livro \cite{Boldrini}, artigos publicados em periódicos \cite{Contiero,Cuminato}, capítulo de livro \cite{daSilva}, dissertação de mestrado \cite{Diniz}, tese de doutorado \cite{Mallet}, livro publicado dentro de uma série \cite{Gomes}, trabalho publicado em anais de eventos \cite{Santos}, {\it website} e outros \cite{CNMAC}. Sempre que disponível forneça o DOI, ISBN ou ISSN, conforme o caso.
+
+\section{Considerações Finais}
+
+Esta seção reservada às principais conclusões e considerações finais do trabalho.
 
 \section*{Agradecimentos (opcional)}
 
-Seção reservada aos agradecimentos dos autores, caso for pertinente. Por exemplo, agradecimento a fomentos.
+Seção reservada aos agradecimentos dos autores, caso for pertinente. Por exemplo, agradecimento a fomentos. Esta seção não é numerada e deve ser disposta entre a seção de Considerações Finais e as Referências.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
