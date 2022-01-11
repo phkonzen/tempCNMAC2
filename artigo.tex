@@ -25,7 +25,7 @@
 \usepackage{graphicx}
 \usepackage{epsfig}
 \usepackage{indentfirst}
-\usepackage{amsmath, amsfonts, amssymb, amsthm}
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}
 \usepackage{url}
 \usepackage{csquotes}
 % Ambientes pré-definidos
@@ -43,7 +43,7 @@
 \newtheorem{cor}{Corol\'ario}[section]
 
 % ref bibliográficas
-\usepackage[backend=bibtex]{biblatex}
+\usepackage[backend=bibtex, style=numeric-comp]{biblatex}
 \addbibresource{refs.bib}
 \DeclareTextFontCommand{\emph}{\boldmath\bfseries}
 \DefineBibliographyStrings{brazil}{phdthesis = {Tese de doutorado}}
@@ -75,7 +75,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{abstract}
-{\bf Resumo}. Este é o padrão (formato \LaTeX{} apenas) para a submissão de trabalhos da Categoria 2 do CNMAC, destinados à divulgação de pesquisas em andamento, com resultados conclusivos. \emph{Nesta categoria, os trabalhos devem ser submetidos em Português ou Inglês, em forma de artigo com no mínimo 5 e no máximo 7 páginas, incluindo-se as referências bibliográficas.} Os \emph{trabalhos submetidos} que \emph{não estiverem de acordo com o formato} apresentado por esse padrão \emph{serão rejeitados} pelo Comitê Editorial do evento, sem análise do mérito científico.  
+{\bf Resumo}. Este é o padrão (formato \LaTeX{} apenas) para a submissão de trabalhos da Categoria 2 do CNMAC, destinados à divulgação de pesquisas com resultados conclusivos. \emph{Nesta categoria, os trabalhos devem ser submetidos em Português ou Inglês, em forma de artigo com no mínimo 5 e no máximo 7 páginas, incluindo-se as referências bibliográficas.} Os \emph{trabalhos submetidos} que \emph{não estiverem de acordo com o formato} apresentado por esse padrão \emph{serão rejeitados} pelo Comitê Editorial do evento, sem análise do mérito científico.  
 
 \noindent
 {\bf Palavras-chave}. Instruções, \LaTeX, Trabalhos Completos, SBMAC, CNMAC  (entre 3-6 palavras-chave)
@@ -87,7 +87,7 @@ Este documento apresenta o padrão (formato \LaTeX{} apenas) para a submissão d
 
 \section{Equações}
 
-Equações inseridas no resumo devem ser enumeradas sequencialmente e à direita no texto, por exemplo
+Equações inseridas no trabalho completo devem ser enumeradas sequencialmente e à direita no texto, por exemplo
 \begin{equation}
 \frac{\partial u}{\partial t}-\Delta u = f, \quad  \mathrm{em} \; \Omega. \label{Calor}
 \end{equation}
@@ -130,7 +130,7 @@ As referências bibliográficas devem ser inseridas conforme especificado neste 
 
 \section{Considerações Finais}
 
-Esta seção reservada às principais conclusões e considerações finais do trabalho.
+Esta seção é reservada às principais conclusões e considerações finais do trabalho.
 
 \section*{Agradecimentos (opcional)}
 
